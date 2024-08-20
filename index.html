@@ -11,39 +11,210 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'heromain': "url('./images/Hero-main.png')",
+                    },
+                    colors: {
+                        primaryColor: '#E76F51',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
 
-    <header class=" mx-auto bg-lime-200">
+    <header
+        class="mx-auto bg-heromain text-white bg-no-repeat bg-[#0000009f] bg-cover bg-center bg-blend-overlay h-full">
         <!-- NavBar -->
-        <nav class="navbar bg-base-100 justify-between container mx-auto bg-transparent">
+        <nav class="navbar bg-base-100 justify-between container mx-auto bg-transparent pt-5">
             <!-- Logo -->
             <div class="navbar-start">
-                <a class="btn btn-ghost text-xl px-8">Go Ride</a>
+                <a class="btn btn-ghost text-2xl px-8 text-white">Go Ride</a>
             </div>
             <div>
                 <!-- Menu Section -->
                 <div class="navbar-center hidden lg:flex mr-10">
                     <ul class="menu menu-horizontal font-semibold">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contact</a></li>
+                        <li class="text-white hover:underline">
+                            <a>Home</a>
+                        </li>
+                        <li class="text-white hover:underline">
+                            <a>Shop</a>
+                        </li>
+                        <li class="text-white hover:underline">
+                            <a>News</a>
+                        </li>
+                        <li class="text-white hover:underline">
+                            <a>Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- LogIn Button -->
                 <div class="navbar-end">
-                    <a class="btn px-5 btn-error">LogIn</a>
+                    <a class="btn px-5 btn-error text-white bg-primaryColor border-8 border-primaryColor">LogIn</a>
                 </div>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section>
-            
+        <section class="mx-auto bg-transparent container">
+            <!-- Carousel Hero Section -->
+            <div class="carousel w-full mb-2 h-[505px] md:h-80">
+
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <!-- Slide Section -->
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center h-max">
+                        <a href="#slide5" class="btn btn-circle">❮</a>
+                        <!-- Hero Carousel Content; Bike Overview; -->
+                        <section class="block md:flex px-4 items-center gap-2">
+                            <div class="space-y-3 md:w-1/2 px-5 md:px-0 m-auto">
+                                <h2 class="text-4xl font-extrabold">
+                                    Ride-on R15 V4 with Smile
+                                </h2>
+                                <p class="text-gray-300">
+                                    Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-error bg-primaryColor px-5 text-white">
+                                    Purchase
+                                </button>
+                            </div>
+                            <div class="flex items-center w-[75%] m-auto justify-end">
+                                <img src="./images/Hero1.png" alt="R15 V4 With Smile">
+                            </div>
+                        </section>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <!-- Slide Section -->
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center h-max">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <!-- Hero Carousel Content; Bike Overview; -->
+                        <section class="block md:flex px-4 items-center gap-2">
+                            <div class="space-y-3 md:w-1/2 px-5 md:px-0 m-auto">
+                                <h2 class="text-4xl font-extrabold">
+                                    Ride-on R15 V4 with Smile
+                                </h2>
+                                <p class="text-gray-300">
+                                    Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-error bg-primaryColor px-5 text-white">
+                                    Purchase
+                                </button>
+                            </div>
+                            <div class="flex items-center w-[75%] m-auto justify-end">
+                                <img src="./images/Hero2.png" alt="R15 V4 With Smile">
+                            </div>
+                        </section>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full ">
+                    <!-- Slide Section -->
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center h-max">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <!-- Hero Carousel Content; Bike Overview; -->
+                        <section class="block md:flex px-4 items-center gap-2">
+                            <div class="space-y-3 md:w-1/2 px-5 md:px-0 m-auto">
+                                <h2 class="text-4xl font-extrabold">
+                                    Ride-on R15 V4 with Smile
+                                </h2>
+                                <p class="text-gray-300">
+                                    Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-error bg-primaryColor px-5 text-white">
+                                    Purchase
+                                </button>
+                            </div>
+                            <div class="flex items-center w-[75%] m-auto justify-end">
+                                <img src="./images/Hero3.png" alt="R15 V4 With Smile">
+                            </div>
+                        </section>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full ">
+                    <!-- Slide Section -->
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center h-max">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <!-- Hero Carousel Content; Bike Overview; -->
+                        <section class="block md:flex px-4 items-center gap-2">
+                            <div class="space-y-3 md:w-1/2 px-5 md:px-0 m-auto">
+                                <h2 class="text-4xl font-extrabold">
+                                    Ride-on R15 V4 with Smile
+                                </h2>
+                                <p class="text-gray-300">
+                                    Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-error bg-primaryColor px-5 text-white">
+                                    Purchase
+                                </button>
+                            </div>
+                            <div class="flex items-center w-[75%] m-auto justify-end">
+                                <img src="./images/Hero4.png" alt="R15 V4 With Smile">
+                            </div>
+                        </section>
+                        <a href="#slide5" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div id="slide5" class="carousel-item relative w-full ">
+                    <!-- Slide Section -->
+                    <div
+                        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between items-center h-max">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <!-- Hero Carousel Content; Bike Overview; -->
+                        <section class="block md:flex px-4 items-center gap-2">
+                            <div class="space-y-3 md:w-1/2 px-5 md:px-0 m-auto">
+                                <P>Computer-controlled digital transistorized with electronic advance</P>
+                                <h2 class="text-4xl font-extrabold">
+                                    Ride-on R15 V4 with Smile
+                                </h2>
+                                <p class="text-gray-300">
+                                    Amet minim mollit non deserunt ullamco
+                                    est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                </p>
+                                <button class="btn btn-error bg-primaryColor px-5 text-white">
+                                    Purchase
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-end w-[75%] m-auto">
+                                <img class="w-[350px]" src="./images/Hero5.png" alt="R15 V4 With Smile">
+                            </div>
+                        </section>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </header>
+
+    <!-- Featured Bikes Section -->
+    <section></section>
 
 </body>
 
